@@ -1,2 +1,2 @@
-# CopyPinterest
-absolutely copy the app called Pinterest
+# YDWorkSpace
+Yuan Luo & Xiadan Hu 's workspace

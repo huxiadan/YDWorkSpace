@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36FC54941CAB6FA00009A775 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC54931CAB6FA00009A775 /* main.m */; };
+		36FC54971CAB6FA00009A775 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC54961CAB6FA00009A775 /* AppDelegate.m */; };
+		36FC549A1CAB6FA00009A775 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC54991CAB6FA00009A775 /* ViewController.m */; };
+		36FC549D1CAB6FA00009A775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FC549B1CAB6FA00009A775 /* Main.storyboard */; };
+		36FC549F1CAB6FA00009A775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FC549E1CAB6FA00009A775 /* Assets.xcassets */; };
+		36FC54A21CAB6FA00009A775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FC54A01CAB6FA00009A775 /* LaunchScreen.storyboard */; };
+		36FC54AD1CAB6FA00009A775 /* CopyPinterestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC54AC1CAB6FA00009A775 /* CopyPinterestTests.m */; };
+		36FC54B81CAB6FA00009A775 /* CopyPinterestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC54B71CAB6FA00009A775 /* CopyPinterestUITests.m */; };
+		36FC55111CAB75090009A775 /* YDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FC55101CAB75090009A775 /* YDKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36FC54A91CAB6FA00009A775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36FC54871CAB6FA00009A775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36FC548E1CAB6FA00009A775;
+			remoteInfo = CopyPinterest;
+		};
+		36FC54B41CAB6FA00009A775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36FC54871CAB6FA00009A775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36FC548E1CAB6FA00009A775;
+			remoteInfo = CopyPinterest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36FC548F1CAB6FA00009A775 /* CopyPinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyPinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FC54931CAB6FA00009A775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		36FC54951CAB6FA00009A775 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		36FC54961CAB6FA00009A775 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		36FC54981CAB6FA00009A775 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36FC54991CAB6FA00009A775 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36FC549C1CAB6FA00009A775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		36FC549E1CAB6FA00009A775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36FC54A11CAB6FA00009A775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36FC54A31CAB6FA00009A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36FC54A81CAB6FA00009A775 /* CopyPinterestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyPinterestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FC54AC1CAB6FA00009A775 /* CopyPinterestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyPinterestTests.m; sourceTree = "<group>"; };
+		36FC54AE1CAB6FA00009A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36FC54B31CAB6FA00009A775 /* CopyPinterestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyPinterestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FC54B71CAB6FA00009A775 /* CopyPinterestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyPinterestUITests.m; sourceTree = "<group>"; };
+		36FC54B91CAB6FA00009A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36FC55101CAB75090009A775 /* YDKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YDKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/YDWorkSpace-eunqlsbwawjagphcbuprbjsohofv/Build/Products/Debug-iphonesimulator/YDKit.framework"; sourceTree = "<group>"; };
+		36FC552F1CAB78FA0009A775 /* CopyPinterest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CopyPinterest-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36FC548C1CAB6FA00009A775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC55111CAB75090009A775 /* YDKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54A51CAB6FA00009A775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54B01CAB6FA00009A775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36FC54861CAB6FA00009A775 = {
+			isa = PBXGroup;
+			children = (
+				36FC54911CAB6FA00009A775 /* CopyPinterest */,
+				36FC550F1CAB74950009A775 /* FrameWork */,
+				36FC54AB1CAB6FA00009A775 /* CopyPinterestTests */,
+				36FC54B61CAB6FA00009A775 /* CopyPinterestUITests */,
+				36FC54901CAB6FA00009A775 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36FC54901CAB6FA00009A775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36FC548F1CAB6FA00009A775 /* CopyPinterest.app */,
+				36FC54A81CAB6FA00009A775 /* CopyPinterestTests.xctest */,
+				36FC54B31CAB6FA00009A775 /* CopyPinterestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36FC54911CAB6FA00009A775 /* CopyPinterest */ = {
+			isa = PBXGroup;
+			children = (
+				36FC54951CAB6FA00009A775 /* AppDelegate.h */,
+				36FC54961CAB6FA00009A775 /* AppDelegate.m */,
+				36FC54981CAB6FA00009A775 /* ViewController.h */,
+				36FC54991CAB6FA00009A775 /* ViewController.m */,
+				36FC54921CAB6FA00009A775 /* Supporting Files */,
+			);
+			path = CopyPinterest;
+			sourceTree = "<group>";
+		};
+		36FC54921CAB6FA00009A775 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36FC54A01CAB6FA00009A775 /* LaunchScreen.storyboard */,
+				36FC549B1CAB6FA00009A775 /* Main.storyboard */,
+				36FC54A31CAB6FA00009A775 /* Info.plist */,
+				36FC549E1CAB6FA00009A775 /* Assets.xcassets */,
+				36FC54931CAB6FA00009A775 /* main.m */,
+				36FC552F1CAB78FA0009A775 /* CopyPinterest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36FC54AB1CAB6FA00009A775 /* CopyPinterestTests */ = {
+			isa = PBXGroup;
+			children = (
+				36FC54AC1CAB6FA00009A775 /* CopyPinterestTests.m */,
+				36FC54AE1CAB6FA00009A775 /* Info.plist */,
+			);
+			path = CopyPinterestTests;
+			sourceTree = "<group>";
+		};
+		36FC54B61CAB6FA00009A775 /* CopyPinterestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36FC54B71CAB6FA00009A775 /* CopyPinterestUITests.m */,
+				36FC54B91CAB6FA00009A775 /* Info.plist */,
+			);
+			path = CopyPinterestUITests;
+			sourceTree = "<group>";
+		};
+		36FC550F1CAB74950009A775 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				36FC55101CAB75090009A775 /* YDKit.framework */,
+			);
+			name = FrameWork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36FC548E1CAB6FA00009A775 /* CopyPinterest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FC54BC1CAB6FA00009A775 /* Build configuration list for PBXNativeTarget "CopyPinterest" */;
+			buildPhases = (
+				36FC548B1CAB6FA00009A775 /* Sources */,
+				36FC548C1CAB6FA00009A775 /* Frameworks */,
+				36FC548D1CAB6FA00009A775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CopyPinterest;
+			productName = CopyPinterest;
+			productReference = 36FC548F1CAB6FA00009A775 /* CopyPinterest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36FC54A71CAB6FA00009A775 /* CopyPinterestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FC54BF1CAB6FA00009A775 /* Build configuration list for PBXNativeTarget "CopyPinterestTests" */;
+			buildPhases = (
+				36FC54A41CAB6FA00009A775 /* Sources */,
+				36FC54A51CAB6FA00009A775 /* Frameworks */,
+				36FC54A61CAB6FA00009A775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36FC54AA1CAB6FA00009A775 /* PBXTargetDependency */,
+			);
+			name = CopyPinterestTests;
+			productName = CopyPinterestTests;
+			productReference = 36FC54A81CAB6FA00009A775 /* CopyPinterestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36FC54B21CAB6FA00009A775 /* CopyPinterestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FC54C21CAB6FA00009A775 /* Build configuration list for PBXNativeTarget "CopyPinterestUITests" */;
+			buildPhases = (
+				36FC54AF1CAB6FA00009A775 /* Sources */,
+				36FC54B01CAB6FA00009A775 /* Frameworks */,
+				36FC54B11CAB6FA00009A775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36FC54B51CAB6FA00009A775 /* PBXTargetDependency */,
+			);
+			name = CopyPinterestUITests;
+			productName = CopyPinterestUITests;
+			productReference = 36FC54B31CAB6FA00009A775 /* CopyPinterestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36FC54871CAB6FA00009A775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Y&D";
+				TargetAttributes = {
+					36FC548E1CAB6FA00009A775 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					36FC54A71CAB6FA00009A775 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 36FC548E1CAB6FA00009A775;
+					};
+					36FC54B21CAB6FA00009A775 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 36FC548E1CAB6FA00009A775;
+					};
+				};
+			};
+			buildConfigurationList = 36FC548A1CAB6FA00009A775 /* Build configuration list for PBXProject "CopyPinterest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36FC54861CAB6FA00009A775;
+			productRefGroup = 36FC54901CAB6FA00009A775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36FC548E1CAB6FA00009A775 /* CopyPinterest */,
+				36FC54A71CAB6FA00009A775 /* CopyPinterestTests */,
+				36FC54B21CAB6FA00009A775 /* CopyPinterestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36FC548D1CAB6FA00009A775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC54A21CAB6FA00009A775 /* LaunchScreen.storyboard in Resources */,
+				36FC549F1CAB6FA00009A775 /* Assets.xcassets in Resources */,
+				36FC549D1CAB6FA00009A775 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54A61CAB6FA00009A775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54B11CAB6FA00009A775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36FC548B1CAB6FA00009A775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC549A1CAB6FA00009A775 /* ViewController.m in Sources */,
+				36FC54971CAB6FA00009A775 /* AppDelegate.m in Sources */,
+				36FC54941CAB6FA00009A775 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54A41CAB6FA00009A775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC54AD1CAB6FA00009A775 /* CopyPinterestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54AF1CAB6FA00009A775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC54B81CAB6FA00009A775 /* CopyPinterestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36FC54AA1CAB6FA00009A775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36FC548E1CAB6FA00009A775 /* CopyPinterest */;
+			targetProxy = 36FC54A91CAB6FA00009A775 /* PBXContainerItemProxy */;
+		};
+		36FC54B51CAB6FA00009A775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36FC548E1CAB6FA00009A775 /* CopyPinterest */;
+			targetProxy = 36FC54B41CAB6FA00009A775 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36FC549B1CAB6FA00009A775 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36FC549C1CAB6FA00009A775 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		36FC54A01CAB6FA00009A775 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36FC54A11CAB6FA00009A775 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		36FC54BA1CAB6FA00009A775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		36FC54BB1CAB6FA00009A775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36FC54BD1CAB6FA00009A775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../YDKit/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CopyPinterest/CopyPinterest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = CopyPinterest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.copypinterest.CopyPinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../YDKit/**";
+			};
+			name = Debug;
+		};
+		36FC54BE1CAB6FA00009A775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../YDKit/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CopyPinterest/CopyPinterest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = CopyPinterest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.copypinterest.CopyPinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../YDKit/**";
+			};
+			name = Release;
+		};
+		36FC54C01CAB6FA00009A775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CopyPinterestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.copypinterest.CopyPinterestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyPinterest.app/CopyPinterest";
+			};
+			name = Debug;
+		};
+		36FC54C11CAB6FA00009A775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CopyPinterestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.copypinterest.CopyPinterestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyPinterest.app/CopyPinterest";
+			};
+			name = Release;
+		};
+		36FC54C31CAB6FA00009A775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CopyPinterestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.copypinterest.CopyPinterestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CopyPinterest;
+			};
+			name = Debug;
+		};
+		36FC54C41CAB6FA00009A775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CopyPinterestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.copypinterest.CopyPinterestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CopyPinterest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36FC548A1CAB6FA00009A775 /* Build configuration list for PBXProject "CopyPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC54BA1CAB6FA00009A775 /* Debug */,
+				36FC54BB1CAB6FA00009A775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FC54BC1CAB6FA00009A775 /* Build configuration list for PBXNativeTarget "CopyPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC54BD1CAB6FA00009A775 /* Debug */,
+				36FC54BE1CAB6FA00009A775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FC54BF1CAB6FA00009A775 /* Build configuration list for PBXNativeTarget "CopyPinterestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC54C01CAB6FA00009A775 /* Debug */,
+				36FC54C11CAB6FA00009A775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FC54C21CAB6FA00009A775 /* Build configuration list for PBXNativeTarget "CopyPinterestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC54C31CAB6FA00009A775 /* Debug */,
+				36FC54C41CAB6FA00009A775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36FC54871CAB6FA00009A775 /* Project object */;
+}

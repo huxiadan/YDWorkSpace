@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36FC54F71CAB71D70009A775 /* YDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC54F61CAB71D70009A775 /* YDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC54FE1CAB71D70009A775 /* YDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FC54F31CAB71D70009A775 /* YDKit.framework */; };
+		36FC55031CAB71D70009A775 /* YDKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC55021CAB71D70009A775 /* YDKitTests.m */; };
+		36FC55221CAB77B90009A775 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC55151CAB77B90009A775 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC55231CAB77B90009A775 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC55161CAB77B90009A775 /* AFHTTPSessionManager.m */; };
+		36FC55241CAB77B90009A775 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC55171CAB77B90009A775 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC55251CAB77B90009A775 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC55181CAB77B90009A775 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC55261CAB77B90009A775 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC55191CAB77B90009A775 /* AFNetworkReachabilityManager.m */; };
+		36FC55271CAB77B90009A775 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC551A1CAB77B90009A775 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC55281CAB77B90009A775 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC551B1CAB77B90009A775 /* AFSecurityPolicy.m */; };
+		36FC55291CAB77B90009A775 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC551C1CAB77B90009A775 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC552A1CAB77B90009A775 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC551D1CAB77B90009A775 /* AFURLRequestSerialization.m */; };
+		36FC552B1CAB77B90009A775 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC551E1CAB77B90009A775 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC552C1CAB77B90009A775 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC551F1CAB77B90009A775 /* AFURLResponseSerialization.m */; };
+		36FC552D1CAB77B90009A775 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC55201CAB77B90009A775 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36FC552E1CAB77B90009A775 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC55211CAB77B90009A775 /* AFURLSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36FC54FF1CAB71D70009A775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36FC54EA1CAB71D70009A775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36FC54F21CAB71D70009A775;
+			remoteInfo = YDKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36FC55121CAB75490009A775 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		36E2D9C01CAB7E6200B62AB5 /* YDKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDKit-Prefix.pch"; sourceTree = "<group>"; };
+		36FC54F31CAB71D70009A775 /* YDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FC54F61CAB71D70009A775 /* YDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKit.h; sourceTree = "<group>"; };
+		36FC54F81CAB71D70009A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36FC54FD1CAB71D70009A775 /* YDKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FC55021CAB71D70009A775 /* YDKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDKitTests.m; sourceTree = "<group>"; };
+		36FC55041CAB71D70009A775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36FC55151CAB77B90009A775 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		36FC55161CAB77B90009A775 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		36FC55171CAB77B90009A775 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		36FC55181CAB77B90009A775 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		36FC55191CAB77B90009A775 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		36FC551A1CAB77B90009A775 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		36FC551B1CAB77B90009A775 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		36FC551C1CAB77B90009A775 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		36FC551D1CAB77B90009A775 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		36FC551E1CAB77B90009A775 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		36FC551F1CAB77B90009A775 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		36FC55201CAB77B90009A775 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		36FC55211CAB77B90009A775 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36FC54EF1CAB71D70009A775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54FA1CAB71D70009A775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC54FE1CAB71D70009A775 /* YDKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36FC54E91CAB71D70009A775 = {
+			isa = PBXGroup;
+			children = (
+				36FC54F41CAB71D70009A775 /* Products */,
+				36FC54F51CAB71D70009A775 /* YDKit */,
+				36FC55011CAB71D70009A775 /* YDKitTests */,
+			);
+			sourceTree = "<group>";
+		};
+		36FC54F41CAB71D70009A775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36FC54F31CAB71D70009A775 /* YDKit.framework */,
+				36FC54FD1CAB71D70009A775 /* YDKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36FC54F51CAB71D70009A775 /* YDKit */ = {
+			isa = PBXGroup;
+			children = (
+				36FC55131CAB77B90009A775 /* ThirdPartyLibrary */,
+				36FC54F61CAB71D70009A775 /* YDKit.h */,
+				36FC54F81CAB71D70009A775 /* Info.plist */,
+				36E2D9C01CAB7E6200B62AB5 /* YDKit-Prefix.pch */,
+			);
+			path = YDKit;
+			sourceTree = "<group>";
+		};
+		36FC55011CAB71D70009A775 /* YDKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				36FC55021CAB71D70009A775 /* YDKitTests.m */,
+				36FC55041CAB71D70009A775 /* Info.plist */,
+			);
+			path = YDKitTests;
+			sourceTree = "<group>";
+		};
+		36FC55131CAB77B90009A775 /* ThirdPartyLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				36FC55141CAB77B90009A775 /* AFNetworking */,
+			);
+			path = ThirdPartyLibrary;
+			sourceTree = "<group>";
+		};
+		36FC55141CAB77B90009A775 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				36FC55151CAB77B90009A775 /* AFHTTPSessionManager.h */,
+				36FC55161CAB77B90009A775 /* AFHTTPSessionManager.m */,
+				36FC55171CAB77B90009A775 /* AFNetworking.h */,
+				36FC55181CAB77B90009A775 /* AFNetworkReachabilityManager.h */,
+				36FC55191CAB77B90009A775 /* AFNetworkReachabilityManager.m */,
+				36FC551A1CAB77B90009A775 /* AFSecurityPolicy.h */,
+				36FC551B1CAB77B90009A775 /* AFSecurityPolicy.m */,
+				36FC551C1CAB77B90009A775 /* AFURLRequestSerialization.h */,
+				36FC551D1CAB77B90009A775 /* AFURLRequestSerialization.m */,
+				36FC551E1CAB77B90009A775 /* AFURLResponseSerialization.h */,
+				36FC551F1CAB77B90009A775 /* AFURLResponseSerialization.m */,
+				36FC55201CAB77B90009A775 /* AFURLSessionManager.h */,
+				36FC55211CAB77B90009A775 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36FC54F01CAB71D70009A775 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC55291CAB77B90009A775 /* AFURLRequestSerialization.h in Headers */,
+				36FC55221CAB77B90009A775 /* AFHTTPSessionManager.h in Headers */,
+				36FC55271CAB77B90009A775 /* AFSecurityPolicy.h in Headers */,
+				36FC55251CAB77B90009A775 /* AFNetworkReachabilityManager.h in Headers */,
+				36FC552D1CAB77B90009A775 /* AFURLSessionManager.h in Headers */,
+				36FC552B1CAB77B90009A775 /* AFURLResponseSerialization.h in Headers */,
+				36FC55241CAB77B90009A775 /* AFNetworking.h in Headers */,
+				36FC54F71CAB71D70009A775 /* YDKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		36FC54F21CAB71D70009A775 /* YDKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FC55071CAB71D70009A775 /* Build configuration list for PBXNativeTarget "YDKit" */;
+			buildPhases = (
+				36FC54EE1CAB71D70009A775 /* Sources */,
+				36FC54EF1CAB71D70009A775 /* Frameworks */,
+				36FC54F01CAB71D70009A775 /* Headers */,
+				36FC54F11CAB71D70009A775 /* Resources */,
+				36FC55121CAB75490009A775 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDKit;
+			productName = YDKit;
+			productReference = 36FC54F31CAB71D70009A775 /* YDKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		36FC54FC1CAB71D70009A775 /* YDKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36FC550A1CAB71D70009A775 /* Build configuration list for PBXNativeTarget "YDKitTests" */;
+			buildPhases = (
+				36FC54F91CAB71D70009A775 /* Sources */,
+				36FC54FA1CAB71D70009A775 /* Frameworks */,
+				36FC54FB1CAB71D70009A775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36FC55001CAB71D70009A775 /* PBXTargetDependency */,
+			);
+			name = YDKitTests;
+			productName = YDKitTests;
+			productReference = 36FC54FD1CAB71D70009A775 /* YDKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36FC54EA1CAB71D70009A775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Y&D";
+				TargetAttributes = {
+					36FC54F21CAB71D70009A775 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					36FC54FC1CAB71D70009A775 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 36FC54ED1CAB71D70009A775 /* Build configuration list for PBXProject "YDKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36FC54E91CAB71D70009A775;
+			productRefGroup = 36FC54F41CAB71D70009A775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36FC54F21CAB71D70009A775 /* YDKit */,
+				36FC54FC1CAB71D70009A775 /* YDKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36FC54F11CAB71D70009A775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54FB1CAB71D70009A775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36FC54EE1CAB71D70009A775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC55261CAB77B90009A775 /* AFNetworkReachabilityManager.m in Sources */,
+				36FC55281CAB77B90009A775 /* AFSecurityPolicy.m in Sources */,
+				36FC55231CAB77B90009A775 /* AFHTTPSessionManager.m in Sources */,
+				36FC552E1CAB77B90009A775 /* AFURLSessionManager.m in Sources */,
+				36FC552A1CAB77B90009A775 /* AFURLRequestSerialization.m in Sources */,
+				36FC552C1CAB77B90009A775 /* AFURLResponseSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FC54F91CAB71D70009A775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FC55031CAB71D70009A775 /* YDKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36FC55001CAB71D70009A775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36FC54F21CAB71D70009A775 /* YDKit */;
+			targetProxy = 36FC54FF1CAB71D70009A775 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36FC55051CAB71D70009A775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36FC55061CAB71D70009A775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		36FC55081CAB71D70009A775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YDKit/YDKit-Prefix.pch";
+				INFOPLIST_FILE = YDKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.ydkit.YDKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		36FC55091CAB71D70009A775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YDKit/YDKit-Prefix.pch";
+				INFOPLIST_FILE = YDKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.ydkit.YDKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		36FC550B1CAB71D70009A775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YDKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.ydkit.YDKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		36FC550C1CAB71D70009A775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YDKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yd.ydkit.YDKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36FC54ED1CAB71D70009A775 /* Build configuration list for PBXProject "YDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC55051CAB71D70009A775 /* Debug */,
+				36FC55061CAB71D70009A775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FC55071CAB71D70009A775 /* Build configuration list for PBXNativeTarget "YDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC55081CAB71D70009A775 /* Debug */,
+				36FC55091CAB71D70009A775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36FC550A1CAB71D70009A775 /* Build configuration list for PBXNativeTarget "YDKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36FC550B1CAB71D70009A775 /* Debug */,
+				36FC550C1CAB71D70009A775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36FC54EA1CAB71D70009A775 /* Project object */;
+}

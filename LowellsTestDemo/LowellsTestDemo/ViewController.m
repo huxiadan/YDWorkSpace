@@ -8,11 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
-
-UITableView *tableView;
-NSMutableArray *cells;
-
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource> {
+    UITableView *_tableView;
+    NSMutableArray *_cells;
+}
 @end
 
 @implementation ViewController
@@ -21,25 +20,28 @@ NSMutableArray *cells;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    [self.view addSubview:tableView];
+    self.title = @"Demos";
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [self.view addSubview:_tableView];
     
     [self generateCells];
-    [tableView reloadData];
+    [_tableView reloadData];
 }
 
 - (void)generateCells {
-    cells = [NSMutableArray array];
+    _cells = [NSMutableArray array];
     
-    [cells addObject:@"WaterFallFlow"];
+    [_cells addObject:@"WaterFallFlow"];
 }
 
 #pragma mark ------------------ UITableView delegate & datasource methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return cells.count;
+    return _cells.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -48,7 +50,17 @@ NSMutableArray *cells;
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     }
+    NSString *classPrefix = [_cells objectAtIndex:indexPath.row];
+    cell.textLabel.text = classPrefix;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *classPrefix = [_cells objectAtIndex:indexPath.row];
+    Class class = NSClassFromString([NSString stringWithFormat:@"%@ViewController", classPrefix]);
+    id vc = [class new];
+    [(UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController pushViewController:vc animated:YES];
 }
 
 @end

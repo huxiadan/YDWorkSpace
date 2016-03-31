@@ -5,6 +5,9 @@
       location = "group:CopyPinterest/CopyPinterest.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:LowellsTestDemo/LowellsTestDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:YDKit/YDKit.xcodeproj">
    </FileRef>
 </Workspace>

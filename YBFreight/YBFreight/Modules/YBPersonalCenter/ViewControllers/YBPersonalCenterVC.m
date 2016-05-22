@@ -7,7 +7,6 @@
 //
 
 #import "YBPersonalCenterVC.h"
-
 @interface YBPersonalCenterVC ()
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -46,9 +45,10 @@
         _tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.tableView.bounds), 100)];
         
         UIButton *avatarBtn;
-//        [avatarBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-//            
-//        }];
+        [avatarBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+        }];
+        
 //        [avatarBtn sd_setImageWithURL:[NSURL new] forState:UIControlStateNormal placeholderImage:nil];
     }
     return _tableHeaderView;

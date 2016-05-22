@@ -37,4 +37,5 @@ FOUNDATION_EXPORT const unsigned char YDKitVersionString[];
 #import "UIImageView+WebCache.h"
 #import "UIImageView+HighlightedWebCache.h"
 #import "UIView+WebCacheOperation.h"
+#import "SDWebImageDecoder.h"
 

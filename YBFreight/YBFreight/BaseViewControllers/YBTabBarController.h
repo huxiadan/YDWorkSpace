@@ -6,8 +6,6 @@
 //  Copyright © 2016 Y&D. All rights reserved.
 //
 
-#import <YDKit/YDKit.h>
-
 @interface YBTabBarController : RDVTabBarController
 
 + (YBTabBarController *)createTabBarController;

@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		362F62091CF1915900D261B0 /* YBFreight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YBFreight-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		36679B731CF154DC0013D6FE /* YBFreight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBFreight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36679B771CF154DC0013D6FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		36679B791CF154DC0013D6FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 		36679B761CF154DC0013D6FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				362F62091CF1915900D261B0 /* YBFreight-Prefix.pch */,
 				36679B7F1CF154DC0013D6FE /* Main.storyboard */,
 				36679B821CF154DC0013D6FE /* Assets.xcassets */,
 				36679B841CF154DC0013D6FE /* LaunchScreen.storyboard */,
@@ -661,10 +663,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = "YBFreight-prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YBFreight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yd.ybfreight.YBFreight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -673,10 +678,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = "YBFreight-prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YBFreight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yd.ybfreight.YBFreight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

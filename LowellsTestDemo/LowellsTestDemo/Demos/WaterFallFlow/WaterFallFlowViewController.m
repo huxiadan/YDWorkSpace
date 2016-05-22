@@ -13,6 +13,8 @@ static NSString * const reuseId = @"collCell";
 
 @interface WaterFallFlowViewController ()<UICollectionViewDelegate, UICollectionViewDataSource, YDCommonWaterFallFlowLayoutDelegate> {
     UICollectionView *_collectionView;
+    NSInteger cellCount;
+    NSMutableDictionary *heightCache;
 }
 
 @end
@@ -24,8 +26,8 @@ static NSString * const reuseId = @"collCell";
     // Do any additional setup after loading the view.
     
     self.title = @"瀑布流";
-    
-    YDCommonWaterFallFlowLayout *layout = [YDCommonWaterFallFlowLayout layoutWithColumnCount:3 horizonalSpace:5 verticalSpace:10 sectionInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    cellCount = 50;
+    YDCommonWaterFallFlowLayout *layout = [YDCommonWaterFallFlowLayout layoutWithColumnCount:3 horizonalSpace:5 verticalSpace:5 sectionInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     layout.delegate = self;
     
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
@@ -34,20 +36,24 @@ static NSString * const reuseId = @"collCell";
     _collectionView.backgroundColor = [UIColor whiteColor];
     [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseId];
     [self.view addSubview:_collectionView];
-    [_collectionView reloadData];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        cellCount = 50;
+        [_collectionView reloadData];
+    });
 }
 
 
 #pragma mark -------------------- UICollectionView delegate & dataSource methods
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return cellCount;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseId forIndexPath:indexPath];
     if (nil == cell) {
-        cell = [[UICollectionViewCell alloc] initWithFrame:CGRectZero];
+        cell = [[UICollectionViewCell alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
     }
     cell.backgroundColor = [UIColor redColor];
     return cell;
@@ -57,7 +63,7 @@ static NSString * const reuseId = @"collCell";
 #pragma mark -------------------- YDCommonWaterFallFlowLayoutDelegate methods
 
 - (CGFloat)waterFallFlowLayout:(YDCommonWaterFallFlowLayout *)layout heightForWidth:(CGFloat)width andIndexPath:(NSIndexPath *)indexPath {
-    static NSMutableDictionary *heightCache = nil;
+//    return (width+arc4random_uniform(100));
     if (!heightCache) {
         heightCache = [NSMutableDictionary new];
     }

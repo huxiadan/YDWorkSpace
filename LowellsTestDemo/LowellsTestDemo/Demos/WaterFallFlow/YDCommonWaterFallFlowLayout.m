@@ -11,6 +11,7 @@
 @interface YDCommonWaterFallFlowLayout()
 
 @property (nonatomic, strong) NSMutableArray *colMaxHeights;//存每列的最大y
+@property (nonatomic, strong) NSMutableArray *attributesCache;
 
 @end
 
@@ -31,6 +32,7 @@
         _verticalSpace = 0;
         _sectionInsets = UIEdgeInsetsZero;
         _columnCount = 2;
+        _attributesCache = [NSMutableArray new];
     }
     return self;
 }
@@ -44,45 +46,49 @@
 
 - (void)prepareLayout {
     [super prepareLayout];
-}
-
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
-    return YES;
-}
-
-- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger colForIndexPath = (indexPath.item % _columnCount);//indexPath对应第几列
-    UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    attributes.frame = [self getFrameByIndexPath:indexPath];
-    self.colMaxHeights[colForIndexPath] = @(MAX([self.colMaxHeights[colForIndexPath] floatValue], attributes.frame.origin.y + attributes.frame.size.height));
-    return attributes;
-}
-
-- (CGRect)getFrameByIndexPath:(NSIndexPath *)indexPath {
-    CGFloat collectWidth = CGRectGetWidth(self.collectionView.bounds);
-    CGFloat itemWidth = (collectWidth - _sectionInsets.left - _sectionInsets.right - (_columnCount - 1) * _horizonalSpace) / _columnCount;
-    CGFloat itemHeight = [self.delegate waterFallFlowLayout:self heightForWidth:itemWidth andIndexPath:indexPath];
-    NSInteger colForIndexPath = (indexPath.item % _columnCount);//indexPath对应第几列
-    CGFloat x = _sectionInsets.left + colForIndexPath * (itemWidth + _horizonalSpace);
-    if (indexPath.item - _columnCount > -1) {
-        NSIndexPath *preIndexPath = [NSIndexPath indexPathForItem:indexPath.item-_columnCount inSection:0];
-        CGRect preFrame = [self getFrameByIndexPath:preIndexPath];
-        return CGRectMake(preFrame.origin.x, CGRectGetMaxY(preFrame) + _verticalSpace, itemWidth, itemHeight);
-    }
-    return CGRectMake(x, 0, itemWidth, itemHeight);
-}
-
-- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
+    
     for (NSInteger i = 0; i < _columnCount; i++) {
         [self.colMaxHeights addObject:@0];
     }
-    NSMutableArray *attrs = [[NSMutableArray alloc] init];
+    
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
-    for (int i = 0; i < count; i++) {
-        UICollectionViewLayoutAttributes *attr = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
-        [attrs addObject:attr];
+    //得到每个item的属性值进行存储
+    [_attributesCache removeAllObjects];
+    for (NSInteger i = 0 ; i < count; i++) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
+        [_attributesCache addObject:[self layoutAttributesForItemAtIndexPath:indexPath]];
     }
-    return attrs;
+    [self invalidateLayout];
+}
+
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+    return NO;
+}
+
+- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat collectWidth = CGRectGetWidth(self.collectionView.bounds);
+    CGFloat itemWidth = (collectWidth - _sectionInsets.left - _sectionInsets.right - (_columnCount - 1) * _horizonalSpace) / _columnCount;
+    CGFloat itemHeight = [self.delegate waterFallFlowLayout:self heightForWidth:itemWidth andIndexPath:indexPath];
+    
+    __block NSInteger minYCol = 0;//计算哪列最短，下一个拼在最短的下面
+    [self.colMaxHeights enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([_colMaxHeights[minYCol] floatValue] > [obj floatValue]) {
+            minYCol = idx;
+        }
+    }];
+    
+    CGFloat x = _sectionInsets.left + minYCol * (itemWidth + _horizonalSpace);
+    
+    CGFloat y = [_colMaxHeights[minYCol] floatValue] + (indexPath.item < _columnCount ? _sectionInsets.top : _verticalSpace);
+    
+    UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
+    attributes.frame = CGRectMake(x, y, itemWidth, itemHeight);
+    self.colMaxHeights[minYCol] = @(CGRectGetMaxY(attributes.frame));
+    return attributes;
+}
+
+- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
+    return _attributesCache;
 }
 
 

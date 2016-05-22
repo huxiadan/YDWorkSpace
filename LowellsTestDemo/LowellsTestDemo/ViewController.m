@@ -36,6 +36,14 @@
     _cells = [NSMutableArray array];
     
     [_cells addObject:@"WaterFallFlow"];
+    
+    [_cells addObject:@"JSPatch"];
+    
+    [_cells addObject:@"JSQMsg"];
+    
+    [_cells addObject:@"ShareSDK"];
+    
+    [_cells addObject:@"YDTags"];
 }
 
 #pragma mark ------------------ UITableView delegate & datasource methods

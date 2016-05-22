@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36679BB61CF163680013D6FE /* RDVTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 36679BB01CF163680013D6FE /* RDVTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36679BB71CF163680013D6FE /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679BB11CF163680013D6FE /* RDVTabBar.m */; };
+		36679BB81CF163680013D6FE /* RDVTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36679BB21CF163680013D6FE /* RDVTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36679BB91CF163680013D6FE /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679BB31CF163680013D6FE /* RDVTabBarController.m */; };
+		36679BBA1CF163680013D6FE /* RDVTabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 36679BB41CF163680013D6FE /* RDVTabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36679BBB1CF163680013D6FE /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679BB51CF163680013D6FE /* RDVTabBarItem.m */; };
 		36FC54F71CAB71D70009A775 /* YDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FC54F61CAB71D70009A775 /* YDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36FC54FE1CAB71D70009A775 /* YDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FC54F31CAB71D70009A775 /* YDKit.framework */; };
 		36FC55031CAB71D70009A775 /* YDKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FC55021CAB71D70009A775 /* YDKitTests.m */; };
@@ -48,6 +54,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		36679BB01CF163680013D6FE /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		36679BB11CF163680013D6FE /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		36679BB21CF163680013D6FE /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		36679BB31CF163680013D6FE /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		36679BB41CF163680013D6FE /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		36679BB51CF163680013D6FE /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
 		36E2D9C01CAB7E6200B62AB5 /* YDKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDKit-Prefix.pch"; sourceTree = "<group>"; };
 		36FC54F31CAB71D70009A775 /* YDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FC54F61CAB71D70009A775 /* YDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDKit.h; sourceTree = "<group>"; };
@@ -89,6 +101,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36679BAE1CF1635F0013D6FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		36679BAF1CF163680013D6FE /* RDVTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				36679BB01CF163680013D6FE /* RDVTabBar.h */,
+				36679BB11CF163680013D6FE /* RDVTabBar.m */,
+				36679BB21CF163680013D6FE /* RDVTabBarController.h */,
+				36679BB31CF163680013D6FE /* RDVTabBarController.m */,
+				36679BB41CF163680013D6FE /* RDVTabBarItem.h */,
+				36679BB51CF163680013D6FE /* RDVTabBarItem.m */,
+			);
+			path = RDVTabBarController;
+			sourceTree = "<group>";
+		};
 		36FC54E91CAB71D70009A775 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +142,7 @@
 		36FC54F51CAB71D70009A775 /* YDKit */ = {
 			isa = PBXGroup;
 			children = (
+				36679BAE1CF1635F0013D6FE /* Extensions */,
 				36FC55131CAB77B90009A775 /* ThirdPartyLibrary */,
 				36FC54F61CAB71D70009A775 /* YDKit.h */,
 				36FC54F81CAB71D70009A775 /* Info.plist */,
@@ -130,6 +163,7 @@
 		36FC55131CAB77B90009A775 /* ThirdPartyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				36679BAF1CF163680013D6FE /* RDVTabBarController */,
 				36FC55141CAB77B90009A775 /* AFNetworking */,
 			);
 			path = ThirdPartyLibrary;
@@ -162,6 +196,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36679BB81CF163680013D6FE /* RDVTabBarController.h in Headers */,
+				36679BB61CF163680013D6FE /* RDVTabBar.h in Headers */,
+				36679BBA1CF163680013D6FE /* RDVTabBarItem.h in Headers */,
 				36FC55291CAB77B90009A775 /* AFURLRequestSerialization.h in Headers */,
 				36FC55221CAB77B90009A775 /* AFHTTPSessionManager.h in Headers */,
 				36FC55271CAB77B90009A775 /* AFSecurityPolicy.h in Headers */,
@@ -272,10 +309,13 @@
 			files = (
 				36FC55261CAB77B90009A775 /* AFNetworkReachabilityManager.m in Sources */,
 				36FC55281CAB77B90009A775 /* AFSecurityPolicy.m in Sources */,
+				36679BBB1CF163680013D6FE /* RDVTabBarItem.m in Sources */,
 				36FC55231CAB77B90009A775 /* AFHTTPSessionManager.m in Sources */,
 				36FC552E1CAB77B90009A775 /* AFURLSessionManager.m in Sources */,
+				36679BB91CF163680013D6FE /* RDVTabBarController.m in Sources */,
 				36FC552A1CAB77B90009A775 /* AFURLRequestSerialization.m in Sources */,
 				36FC552C1CAB77B90009A775 /* AFURLResponseSerialization.m in Sources */,
+				36679BB71CF163680013D6FE /* RDVTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

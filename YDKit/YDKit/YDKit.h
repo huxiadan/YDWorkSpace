@@ -17,3 +17,5 @@ FOUNDATION_EXPORT const unsigned char YDKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <YDKit/PublicHeader.h>
 
 #import "AFNetworking.h"
+#import "RDVTabBarController.h"
+#import "RDVTabBarItem.h"

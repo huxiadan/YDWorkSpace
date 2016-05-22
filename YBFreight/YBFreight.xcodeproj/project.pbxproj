@@ -15,6 +15,16 @@
 		36679B911CF154DD0013D6FE /* YBFreightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679B901CF154DD0013D6FE /* YBFreightTests.m */; };
 		36679B9C1CF154DD0013D6FE /* YBFreightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679B9B1CF154DD0013D6FE /* YBFreightUITests.m */; };
 		36679BAA1CF155070013D6FE /* YDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36679BA91CF155070013D6FE /* YDKit.framework */; };
+		36679BBF1CF1643D0013D6FE /* YBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679BBE1CF1643D0013D6FE /* YBTabBarController.m */; };
+		36679BC71CF167E50013D6FE /* icon_person_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 36679BC11CF167E50013D6FE /* icon_person_normal.png */; };
+		36679BC81CF167E50013D6FE /* icon_person_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 36679BC21CF167E50013D6FE /* icon_person_highlight.png */; };
+		36679BC91CF167E50013D6FE /* icon_freight_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 36679BC31CF167E50013D6FE /* icon_freight_normal.png */; };
+		36679BCA1CF167E50013D6FE /* icon_freight_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 36679BC41CF167E50013D6FE /* icon_freight_highlight.png */; };
+		36679BCB1CF167E50013D6FE /* icon_order_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 36679BC51CF167E50013D6FE /* icon_order_highlight.png */; };
+		36679BCC1CF167E50013D6FE /* icon_order_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 36679BC61CF167E50013D6FE /* icon_order_normal.png */; };
+		36679BF41CF178EA0013D6FE /* YBFreightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679BDF1CF178EA0013D6FE /* YBFreightVC.m */; };
+		36679BF51CF178EA0013D6FE /* YBOrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679BEB1CF178EA0013D6FE /* YBOrderVC.m */; };
+		36679BF61CF178EA0013D6FE /* YBPersonalCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 36679BF21CF178EA0013D6FE /* YBPersonalCenterVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,20 @@
 		36679B9B1CF154DD0013D6FE /* YBFreightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBFreightUITests.m; sourceTree = "<group>"; };
 		36679B9D1CF154DD0013D6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36679BA91CF155070013D6FE /* YDKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YDKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/YDWorkSpace-eunqlsbwawjagphcbuprbjsohofv/Build/Products/Debug-iphonesimulator/YDKit.framework"; sourceTree = "<group>"; };
+		36679BBD1CF1643D0013D6FE /* YBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBTabBarController.h; sourceTree = "<group>"; };
+		36679BBE1CF1643D0013D6FE /* YBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBTabBarController.m; sourceTree = "<group>"; };
+		36679BC11CF167E50013D6FE /* icon_person_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_person_normal.png; sourceTree = "<group>"; };
+		36679BC21CF167E50013D6FE /* icon_person_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_person_highlight.png; sourceTree = "<group>"; };
+		36679BC31CF167E50013D6FE /* icon_freight_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_freight_normal.png; sourceTree = "<group>"; };
+		36679BC41CF167E50013D6FE /* icon_freight_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_freight_highlight.png; sourceTree = "<group>"; };
+		36679BC51CF167E50013D6FE /* icon_order_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_order_highlight.png; sourceTree = "<group>"; };
+		36679BC61CF167E50013D6FE /* icon_order_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_order_normal.png; sourceTree = "<group>"; };
+		36679BDE1CF178EA0013D6FE /* YBFreightVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBFreightVC.h; sourceTree = "<group>"; };
+		36679BDF1CF178EA0013D6FE /* YBFreightVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBFreightVC.m; sourceTree = "<group>"; };
+		36679BEA1CF178EA0013D6FE /* YBOrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBOrderVC.h; sourceTree = "<group>"; };
+		36679BEB1CF178EA0013D6FE /* YBOrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBOrderVC.m; sourceTree = "<group>"; };
+		36679BF11CF178EA0013D6FE /* YBPersonalCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBPersonalCenterVC.h; sourceTree = "<group>"; };
+		36679BF21CF178EA0013D6FE /* YBPersonalCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBPersonalCenterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +126,9 @@
 		36679B751CF154DC0013D6FE /* YBFreight */ = {
 			isa = PBXGroup;
 			children = (
+				36679BD91CF178EA0013D6FE /* Modules */,
+				36679BBC1CF164050013D6FE /* BaseViewControllers */,
 				36679BAC1CF155A90013D6FE /* Global */,
-				36679BAD1CF155A90013D6FE /* Modules */,
 				36679B791CF154DC0013D6FE /* AppDelegate.h */,
 				36679B7A1CF154DC0013D6FE /* AppDelegate.m */,
 				36679B761CF154DC0013D6FE /* Supporting Files */,
@@ -157,11 +182,200 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
-		36679BAD1CF155A90013D6FE /* Modules */ = {
+		36679BBC1CF164050013D6FE /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36679BC01CF167E50013D6FE /* Resources */,
+				36679BBD1CF1643D0013D6FE /* YBTabBarController.h */,
+				36679BBE1CF1643D0013D6FE /* YBTabBarController.m */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		36679BC01CF167E50013D6FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				36679BC11CF167E50013D6FE /* icon_person_normal.png */,
+				36679BC21CF167E50013D6FE /* icon_person_highlight.png */,
+				36679BC31CF167E50013D6FE /* icon_freight_normal.png */,
+				36679BC41CF167E50013D6FE /* icon_freight_highlight.png */,
+				36679BC51CF167E50013D6FE /* icon_order_highlight.png */,
+				36679BC61CF167E50013D6FE /* icon_order_normal.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36679BD91CF178EA0013D6FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				36679BDA1CF178EA0013D6FE /* YBFreight */,
+				36679BE11CF178EA0013D6FE /* YBLogin */,
+				36679BE61CF178EA0013D6FE /* YBOrder */,
+				36679BED1CF178EA0013D6FE /* YBPersonalCenter */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		36679BDA1CF178EA0013D6FE /* YBFreight */ = {
+			isa = PBXGroup;
+			children = (
+				36679BDB1CF178EA0013D6FE /* Model */,
+				36679BDC1CF178EA0013D6FE /* Resources */,
+				36679BDD1CF178EA0013D6FE /* ViewControllers */,
+				36679BE01CF178EA0013D6FE /* Views */,
+			);
+			path = YBFreight;
+			sourceTree = "<group>";
+		};
+		36679BDB1CF178EA0013D6FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Modules;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36679BDC1CF178EA0013D6FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36679BDD1CF178EA0013D6FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36679BDE1CF178EA0013D6FE /* YBFreightVC.h */,
+				36679BDF1CF178EA0013D6FE /* YBFreightVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36679BE01CF178EA0013D6FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36679BE11CF178EA0013D6FE /* YBLogin */ = {
+			isa = PBXGroup;
+			children = (
+				36679BE21CF178EA0013D6FE /* Model */,
+				36679BE31CF178EA0013D6FE /* Resources */,
+				36679BE41CF178EA0013D6FE /* ViewControllers */,
+				36679BE51CF178EA0013D6FE /* Views */,
+			);
+			path = YBLogin;
+			sourceTree = "<group>";
+		};
+		36679BE21CF178EA0013D6FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36679BE31CF178EA0013D6FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36679BE41CF178EA0013D6FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36679BE51CF178EA0013D6FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36679BE61CF178EA0013D6FE /* YBOrder */ = {
+			isa = PBXGroup;
+			children = (
+				36679BE71CF178EA0013D6FE /* Model */,
+				36679BE81CF178EA0013D6FE /* Resources */,
+				36679BE91CF178EA0013D6FE /* ViewControllers */,
+				36679BEC1CF178EA0013D6FE /* Views */,
+			);
+			path = YBOrder;
+			sourceTree = "<group>";
+		};
+		36679BE71CF178EA0013D6FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36679BE81CF178EA0013D6FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36679BE91CF178EA0013D6FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36679BEA1CF178EA0013D6FE /* YBOrderVC.h */,
+				36679BEB1CF178EA0013D6FE /* YBOrderVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36679BEC1CF178EA0013D6FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36679BED1CF178EA0013D6FE /* YBPersonalCenter */ = {
+			isa = PBXGroup;
+			children = (
+				36679BEE1CF178EA0013D6FE /* Model */,
+				36679BEF1CF178EA0013D6FE /* Resources */,
+				36679BF01CF178EA0013D6FE /* ViewControllers */,
+				36679BF31CF178EA0013D6FE /* Views */,
+			);
+			path = YBPersonalCenter;
+			sourceTree = "<group>";
+		};
+		36679BEE1CF178EA0013D6FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		36679BEF1CF178EA0013D6FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36679BF01CF178EA0013D6FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36679BF11CF178EA0013D6FE /* YBPersonalCenterVC.h */,
+				36679BF21CF178EA0013D6FE /* YBPersonalCenterVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36679BF31CF178EA0013D6FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +481,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36679BCB1CF167E50013D6FE /* icon_order_highlight.png in Resources */,
 				36679B861CF154DC0013D6FE /* LaunchScreen.storyboard in Resources */,
+				36679BC71CF167E50013D6FE /* icon_person_normal.png in Resources */,
+				36679BC81CF167E50013D6FE /* icon_person_highlight.png in Resources */,
+				36679BCA1CF167E50013D6FE /* icon_freight_highlight.png in Resources */,
 				36679B831CF154DC0013D6FE /* Assets.xcassets in Resources */,
 				36679B811CF154DC0013D6FE /* Main.storyboard in Resources */,
+				36679BCC1CF167E50013D6FE /* icon_order_normal.png in Resources */,
+				36679BC91CF167E50013D6FE /* icon_freight_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +515,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36679B7B1CF154DC0013D6FE /* AppDelegate.m in Sources */,
+				36679BF41CF178EA0013D6FE /* YBFreightVC.m in Sources */,
+				36679BBF1CF1643D0013D6FE /* YBTabBarController.m in Sources */,
+				36679BF51CF178EA0013D6FE /* YBOrderVC.m in Sources */,
+				36679BF61CF178EA0013D6FE /* YBPersonalCenterVC.m in Sources */,
 				36679B781CF154DC0013D6FE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

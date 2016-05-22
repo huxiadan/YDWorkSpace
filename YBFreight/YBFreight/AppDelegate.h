@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YBTabBarController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, strong) YBTabBarController *tabBarController;
+@property (nonatomic, strong) UINavigationController *rootNavigationController;
 
 @end
 
